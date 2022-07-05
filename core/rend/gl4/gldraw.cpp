@@ -864,7 +864,7 @@ void gl4DrawGunCrosshair(u8 port)
 	glcache.Disable(GL_STENCIL_TEST);
 	glcache.Disable(GL_CULL_FACE);
 	glcache.Enable(GL_BLEND);
-	glcache.BlendFunc(GL_SRC_ALPHA, GL_ONE);
+	glcache.BlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 
 	setupOsdVao();
 	osdVerts->bind();
